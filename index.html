@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Voyagez à Bali avec notre guide, découvrez ses paysages et réservez votre séjour facilement.">
+  <title>Voyage à Bali</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Voyage à Bali</h1>
+    <nav role="navigation">
+      <a href="#accueil" class="active" onclick="showSection('accueil', this)">Accueil</a>
+      <a href="#reservation" onclick="showSection('reservation', this)">Réservation</a>
+      <a href="#contact" onclick="showSection('contact', this)">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Accueil -->
+    <section id="accueil" class="active">
+      <h2>Bienvenue à Bali</h2>
+      <p>Explorez les paysages magnifiques de Bali à travers nos images sélectionnées.</p>
+      <div class="gallery">
+        <img src="images/bali1.jpg" alt="Paysage tropical de Bali">
+        <img src="images/bali4.jpg" alt="Plage de sable à Bali">
+      </div>
+
+      <div class="video-container">
+        <h3>Vidéo panoramique de Bali</h3>
+        <iframe src="https://www.youtube.com/embed/cV9SRObiBrU" allowfullscreen title="Vidéo de Bali"></iframe>
+      </div>
+    </section>
+
+    <!-- Réservation -->
+    <section id="reservation">
+      <h2>Réservez votre séjour</h2>
+      <p>Remplissez le formulaire ci-dessous pour réserver votre aventure à Bali.</p>
+
+      <form id="reservation-form">
+        <input type="text" name="nom" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="date" name="date" required>
+        <input type="number" name="personnes" min="1" placeholder="Nombre de personnes" required>
+        <textarea name="message" placeholder="Message ou demande particulière" rows="4"></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div id="confirmation-message" style="display:none; color:green; margin-top:10px;">
+        Merci pour votre réservation ! Nous vous contacterons bientôt.
+      </div>
+
+      <h3>Plus d'images de Bali</h3>
+      <div class="gallery">
+        <img src="images/bali2.jpg" alt="Rizières en terrasse à Bali">
+        <img src="images/bali3.jpg" alt="Temple hindou à Bali">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <p>Une question ? Écrivez-nous à : <a href="mailto:contact@voyagebali.com">contact@voyagebali.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Voyage à Bali. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
